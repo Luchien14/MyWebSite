@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <title>Promouvoir Bitcoin</title>
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <h1>Bienvenue sur le site de promotion de Bitcoin!</h1>
+    <p>Bitcoin est une monnaie numérique sécurisée, rapide et fiable pour effectuer des transactions en ligne. Ce site web a été créé pour vous donner des informations complètes, des conseils et des actualités sur la monnaie numérique.</p>
+    <h2>Avantages de Bitcoin</h2>
+    <ul>
+      <li>Frais de transaction très bas.</li>
+      <li>Transactions rapides et sécurisées.</li>
+      <li>Grande acceptation internationale.</li>
+    </ul>
+    <h2>Comment acheter Bitcoin?</h2>
+    <p>Vous pouvez acheter et vendre Bitcoin en utilisant des échanges ou des courtiers. Vous trouverez des informations détaillées sur ces services sur ce site.</p>
+    <h2>Comment éviter les fraudes?</h2>
+    <p>Il existe de nombreuses façons d'éviter les escroqueries liées à Bitcoin. N'oubliez pas de vérifier les informations et de faire des recherches avant de vous engager dans une transaction.</p>
+  </body>
+</html>
