@@ -1,164 +1,959 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Maison à Soumagne — Rue du Château de Micheroux 94</title>
-<meta name="description" content="Présentation d'une maison située Rue du Château de Micheroux 94 à Soumagne.">
-<style>
-:root{
-  --ink:#17201d; --muted:#68716d; --cream:#f6f2ea; --paper:#fffdf9;
-  --accent:#9b3d2f; --accent2:#35574f; --line:#e5dfd4;
-  --shadow:0 18px 55px rgba(20,25,22,.10);
-}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:var(--cream);line-height:1.6}
-a{color:inherit}
-.hero{min-height:78vh;display:grid;grid-template-columns:1.08fr .92fr;background:var(--paper)}
-.hero-copy{padding:clamp(36px,7vw,100px);display:flex;flex-direction:column;justify-content:center}
-.kicker{letter-spacing:.16em;text-transform:uppercase;font-size:.76rem;font-weight:800;color:var(--accent);margin-bottom:18px}
-h1{font-family:Georgia,serif;font-size:clamp(3rem,6vw,6.6rem);line-height:.92;font-weight:500;margin:0 0 26px;letter-spacing:-.045em}
-.hero-copy p{font-size:1.12rem;max-width:600px;color:var(--muted)}
-.address{margin-top:24px;font-weight:700}
-.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
-.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 19px;border-radius:999px;text-decoration:none;font-weight:800;border:1px solid var(--ink)}
-.btn.primary{background:var(--ink);color:white}
-.btn.light{background:transparent}
-.hero-photo{min-height:78vh;background:url("images/salon-salle-a-manger.jpg") center/cover no-repeat;position:relative}
-.hero-photo:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.06),rgba(0,0,0,.22))}
-section{padding:clamp(60px,8vw,110px) 6vw}
-.wrap{max-width:1180px;margin:auto}
-.section-head{max-width:720px;margin-bottom:42px}
-.eyebrow{color:var(--accent2);text-transform:uppercase;letter-spacing:.14em;font-size:.75rem;font-weight:800}
-h2{font-family:Georgia,serif;font-size:clamp(2.2rem,4vw,4rem);line-height:1;margin:10px 0 18px;font-weight:500}
-.lead{font-size:1.08rem;color:var(--muted)}
-.features{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
-.feature{background:var(--paper);border:1px solid var(--line);padding:26px;border-radius:18px}
-.feature b{display:block;margin-bottom:5px}
-.feature span{color:var(--muted);font-size:.94rem}
-.gallery{display:grid;grid-template-columns:1.35fr .65fr;gap:16px}
-.gallery img{width:100%;height:100%;object-fit:cover;display:block;border-radius:18px}
-.gallery-main{min-height:620px}
-.gallery-side{display:grid;grid-template-rows:1fr 1fr;gap:16px}
-.gallery-side img{min-height:300px}
-.map-section{background:var(--accent2);color:white}
-.map-section .eyebrow{color:#d9e9df}
-.map-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:34px;align-items:stretch}
-.map-card{background:#27443d;padding:32px;border-radius:20px}
-.map-card p{color:#d9e4df}
-.map-frame{border:0;width:100%;min-height:480px;border-radius:20px;background:#dfe5e1}
-.note{font-size:.84rem;color:#aabdb6;margin-top:18px}
-footer{padding:28px 6vw;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem;background:var(--paper)}
-@media(max-width:850px){
-  .hero{grid-template-columns:1fr}
-  .hero-photo{min-height:52vh;order:-1}
-  .features{grid-template-columns:1fr 1fr}
-  .gallery{grid-template-columns:1fr}
-  .gallery-main{min-height:420px}
-  .gallery-side{grid-template-columns:1fr 1fr;grid-template-rows:none}
-  .gallery-side img{min-height:230px}
-  .map-grid{grid-template-columns:1fr}
-}
-@media(max-width:520px){
-  .features{grid-template-columns:1fr}
-  .gallery-side{grid-template-columns:1fr}
-  .gallery-side img{min-height:260px}
-  h1{font-size:3.2rem}
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Maison 4 chambres à louer – Clos résidentiel</title>
+
+    <meta name="description"
+          content="À louer : agréable maison familiale 4 chambres avec jardin, terrasse, garage et grenier semi-aménagé. Située dans un clos résidentiel calme à proximité des commodités et des axes principaux.">
+
+    <style>
+        :root {
+            --ink: #17201d;
+            --muted: #68716d;
+            --cream: #f6f2ea;
+            --paper: #fffdf9;
+            --accent: #9b3d2f;
+            --accent-dark: #743027;
+            --line: #e5dfd4;
+            --shadow: 0 18px 55px rgba(20, 25, 22, .10);
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: Inter, ui-sans-serif, system-ui, -apple-system,
+                         BlinkMacSystemFont, "Segoe UI", sans-serif;
+            color: var(--ink);
+            background: var(--cream);
+            line-height: 1.65;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .wrap {
+            width: min(1180px, 92%);
+            margin: auto;
+        }
+
+        /* =========================
+           HERO
+        ========================= */
+
+        .hero {
+            min-height: 78vh;
+            display: grid;
+            grid-template-columns: 1.08fr .92fr;
+            background: var(--paper);
+        }
+
+        .hero-copy {
+            padding: clamp(36px, 7vw, 100px);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .kicker {
+            letter-spacing: .16em;
+            text-transform: uppercase;
+            font-size: .78rem;
+            font-weight: 800;
+            color: var(--accent);
+            margin-bottom: 18px;
+        }
+
+        h1 {
+            font-family: Georgia, serif;
+            font-size: clamp(3rem, 6vw, 6rem);
+            line-height: .98;
+            font-weight: 500;
+            margin: 0 0 26px;
+            letter-spacing: -.045em;
+        }
+
+        .hero-copy p {
+            font-size: 1.12rem;
+            max-width: 620px;
+            color: var(--muted);
+        }
+
+        .address {
+            margin-top: 24px;
+            font-weight: 700;
+        }
+
+        .cta {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-top: 28px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 13px 20px;
+            border-radius: 999px;
+            font-weight: 800;
+            border: 1px solid var(--ink);
+            transition: .2s ease;
+        }
+
+        .btn.primary {
+            background: var(--ink);
+            color: white;
+        }
+
+        .btn.light {
+            background: transparent;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+        }
+
+        .hero-photo {
+            min-height: 78vh;
+            background:
+                linear-gradient(
+                    90deg,
+                    rgba(0,0,0,.05),
+                    rgba(0,0,0,.20)
+                ),
+                url("images/salon-salle-a-manger.jpg")
+                center / cover no-repeat;
+        }
+
+        /* =========================
+           SECTIONS
+        ========================= */
+
+        section {
+            padding: clamp(60px, 8vw, 110px) 0;
+        }
+
+        .section-head {
+            max-width: 760px;
+            margin-bottom: 42px;
+        }
+
+        .eyebrow {
+            color: var(--accent);
+            text-transform: uppercase;
+            letter-spacing: .14em;
+            font-size: .75rem;
+            font-weight: 800;
+        }
+
+        h2 {
+            font-family: Georgia, serif;
+            font-size: clamp(2.3rem, 4vw, 4rem);
+            line-height: 1;
+            margin: 10px 0 18px;
+            font-weight: 500;
+        }
+
+        .lead {
+            font-size: 1.08rem;
+            color: var(--muted);
+        }
+
+        /* =========================
+           INTRO
+        ========================= */
+
+        .intro {
+            background: var(--paper);
+        }
+
+        .intro-grid {
+            display: grid;
+            grid-template-columns: .8fr 1.2fr;
+            gap: 70px;
+            align-items: start;
+        }
+
+        .intro-title {
+            font-family: Georgia, serif;
+            font-size: 2.2rem;
+            line-height: 1.1;
+        }
+
+        .intro-text {
+            font-size: 1.12rem;
+            color: var(--muted);
+        }
+
+        /* =========================
+           COMPOSITION
+        ========================= */
+
+        .composition {
+            background: var(--cream);
+        }
+
+        .rooms {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+        }
+
+        .room-card {
+            background: var(--paper);
+            padding: 30px;
+            border: 1px solid var(--line);
+            box-shadow: var(--shadow);
+        }
+
+        .room-number {
+            font-size: .78rem;
+            color: var(--accent);
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: .12em;
+        }
+
+        .room-card h3 {
+            font-family: Georgia, serif;
+            font-size: 1.8rem;
+            margin: 8px 0 20px;
+        }
+
+        .room-card ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        .room-card li {
+            padding: 8px 0;
+            border-bottom: 1px solid var(--line);
+        }
+
+        .room-card li:last-child {
+            border-bottom: 0;
+        }
+
+        /* =========================
+           POINTS FORTS
+        ========================= */
+
+        .features {
+            background: var(--paper);
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 18px;
+        }
+
+        .feature {
+            padding: 28px;
+            border: 1px solid var(--line);
+            background: var(--cream);
+        }
+
+        .feature-icon {
+            font-size: 1.7rem;
+            margin-bottom: 12px;
+        }
+
+        .feature strong {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .feature span {
+            color: var(--muted);
+            font-size: .95rem;
+        }
+
+        /* =========================
+           GALERIE
+        ========================= */
+
+        .gallery-section {
+            background: var(--cream);
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: 1.35fr .65fr;
+            gap: 14px;
+        }
+
+        .gallery-main,
+        .gallery-side img {
+            overflow: hidden;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform .35s ease;
+        }
+
+        .gallery-main {
+            height: 560px;
+        }
+
+        .gallery-side {
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            gap: 14px;
+        }
+
+        .gallery-side img {
+            height: 273px;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.025);
+        }
+
+        /* =========================
+           ENVIRONNEMENT
+        ========================= */
+
+        .environment {
+            background: var(--paper);
+        }
+
+        .environment-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 70px;
+            align-items: center;
+        }
+
+        .environment-list {
+            display: grid;
+            gap: 14px;
+        }
+
+        .environment-item {
+            padding: 18px 20px;
+            border-left: 3px solid var(--accent);
+            background: var(--cream);
+        }
+
+        .environment-item strong {
+            display: block;
+        }
+
+        /* =========================
+           CONTACT
+        ========================= */
+
+        .contact {
+            background: var(--ink);
+            color: white;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr .7fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .contact h2 {
+            color: white;
+        }
+
+        .contact p {
+            color: #d6dcda;
+            max-width: 650px;
+        }
+
+        .contact-box {
+            padding: 32px;
+            border: 1px solid rgba(255,255,255,.18);
+            background: rgba(255,255,255,.05);
+        }
+
+        .contact-box strong {
+            display: block;
+            font-size: 1.2rem;
+            margin-bottom: 8px;
+        }
+
+        .contact .btn {
+            border-color: white;
+            color: white;
+            margin-top: 18px;
+        }
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        footer {
+            background: #101614;
+            color: #aeb7b3;
+            padding: 25px 0;
+            font-size: .9rem;
+        }
+
+        /* =========================
+           MOBILE
+        ========================= */
+
+        @media (max-width: 850px) {
+
+            .hero {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-copy {
+                padding: 55px 6%;
+            }
+
+            .hero-photo {
+                min-height: 55vh;
+            }
+
+            .intro-grid,
+            .environment-grid,
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 35px;
+            }
+
+            .rooms {
+                grid-template-columns: 1fr;
+            }
+
+            .feature-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+
+            .gallery-main {
+                height: 420px;
+            }
+
+            .gallery-side {
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 220px;
+            }
+
+            .gallery-side img {
+                height: 220px;
+            }
+        }
+
+        @media (max-width: 520px) {
+
+            h1 {
+                font-size: 3.1rem;
+            }
+
+            .feature-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .gallery-side {
+                grid-template-columns: 1fr;
+                grid-template-rows: 250px 250px;
+            }
+
+            .gallery-side img {
+                height: 250px;
+            }
+        }
+    </style>
 </head>
+
 <body>
 
+<!-- =========================
+     HERO
+========================= -->
+
 <header class="hero">
-  <div class="hero-copy">
-    <div class="kicker">Soumagne · Micheroux</div>
-    <h1>Une maison pensée pour vivre.</h1>
-    <p>
-      Une présentation sobre et chaleureuse de cette habitation située
-      <strong>Rue du Château de Micheroux 94, 4630 Soumagne</strong>.
-      L'intérieur associe une grande pièce de vie lumineuse, une cuisine équipée
-      et des espaces de vie confortables.
-    </p>
-    <div class="address">📍 Rue du Château de Micheroux 94 · Soumagne</div>
-    <div class="cta">
-      <a class="btn primary" href="#photos">Voir les photos</a>
-      <a class="btn light" target="_blank" rel="noopener"
-         href="https://www.google.com/maps/search/?api=1&query=Rue%20du%20Ch%C3%A2teau%20de%20Micheroux%2094%2C%204630%20Soumagne">Ouvrir Google Maps ↗</a>
+
+    <div class="hero-copy">
+
+        <div class="kicker">
+            À louer · Maison familiale
+        </div>
+
+        <h1>
+            Une maison où il fait bon vivre.
+        </h1>
+
+        <p>
+            Maison 4 chambres avec jardin, terrasse, garage et grand
+            grenier semi-aménagé, située dans un clos résidentiel calme.
+        </p>
+
+        <div class="address">
+            📍 Un environnement paisible, proche de toutes les commodités
+        </div>
+
+        <div class="cta">
+            <a href="#contact" class="btn primary">
+                Demander une visite
+            </a>
+
+            <a href="#photos" class="btn light">
+                Découvrir la maison
+            </a>
+        </div>
+
     </div>
-  </div>
-  <div class="hero-photo" aria-label="Vue du séjour et de la salle à manger"></div>
+
+    <div class="hero-photo"></div>
+
 </header>
 
-<section>
-  <div class="wrap">
-    <div class="section-head">
-      <div class="eyebrow">L'intérieur</div>
-      <h2>Des espaces lumineux et chaleureux</h2>
-      <p class="lead">
-        Une ambiance conviviale, avec une salle à manger ouverte sur l'extérieur,
-        une cuisine fonctionnelle et une chambre aux tonalités sobres.
-      </p>
-    </div>
-    <div class="features">
-      <div class="feature"><b>Pièce de vie</b><span>Salon et salle à manger baignés de lumière naturelle.</span></div>
-      <div class="feature"><b>Extérieur</b><span>Accès direct vers une terrasse et un espace vert.</span></div>
-      <div class="feature"><b>Cuisine</b><span>Cuisine équipée avec nombreux rangements et électroménager intégré.</span></div>
-      <div class="feature"><b>Chambre</b><span>Ambiance calme et rangements généreux.</span></div>
-    </div>
-  </div>
-</section>
 
-<section id="photos" style="padding-top:20px">
-  <div class="wrap">
-    <div class="section-head">
-      <div class="eyebrow">Galerie</div>
-      <h2>Quelques vues de la maison</h2>
-    </div>
-    <div class="gallery">
-      <div class="gallery-main"><img src="salon-salle-a-manger.jpg" alt="Salon et salle à manger"></div>
-      <div class="gallery-side">
-        <img src="cuisine.jpg" alt="Cuisine équipée">
-        <img src="chambre.jpg" alt="Chambre">
-      </div>
-    </div>
-  </div>
-</section>
+<!-- =========================
+     INTRODUCTION
+========================= -->
 
-<section class="map-section">
-  <div class="wrap">
-    <div class="map-grid">
-      <div class="map-card">
-        <div class="eyebrow">Localisation</div>
-        <h2>À Soumagne</h2>
-        <p>
-          Retrouvez facilement la maison et son environnement grâce à la carte ci-contre.
-          L'adresse indiquée est <strong>Rue du Château de Micheroux 94, 4630 Soumagne</strong>.
-        </p>
-        <a class="btn" style="background:white;color:#17201d;border-color:white"
-           target="_blank" rel="noopener"
-           href="https://www.google.com/maps/search/?api=1&query=Rue%20du%20Ch%C3%A2teau%20de%20Micheroux%2094%2C%204630%20Soumagne">
-           Voir l'emplacement sur Google Maps ↗
-        </a>
-        <div class="note">
-          La carte est fournie via Google Maps. Une vue Street View peut être ouverte
-          directement depuis Google Maps lorsque celle-ci est disponible pour l'adresse.
+<section class="intro">
+
+    <div class="wrap intro-grid">
+
+        <div>
+            <div class="eyebrow">
+                Le cadre de vie
+            </div>
+
+            <div class="intro-title">
+                Le calme d'un clos résidentiel,
+                le confort d'une vraie maison familiale.
+            </div>
         </div>
-      </div>
-      <iframe class="map-frame"
-        title="Google Maps — Rue du Château de Micheroux 94, Soumagne"
-        loading="lazy"
-        src="https://www.google.com/maps?q=Rue%20du%20Ch%C3%A2teau%20de%20Micheroux%2094%2C%204630%20Soumagne&output=embed">
-      </iframe>
+
+        <div class="intro-text">
+
+            <p>
+                Vous recherchez une maison confortable, fonctionnelle
+                et idéalement située ?
+            </p>
+
+            <p>
+                Cette agréable habitation vous offre un cadre de vie
+                paisible tout en restant proche de tout ce dont vous
+                avez besoin au quotidien.
+            </p>
+
+            <p>
+                Écoles, commerces, clubs sportifs et principaux axes
+                routiers sont facilement accessibles.
+            </p>
+
+        </div>
+
     </div>
-  </div>
+
 </section>
+
+
+<!-- =========================
+     COMPOSITION
+========================= -->
+
+<section class="composition">
+
+    <div class="wrap">
+
+        <div class="section-head">
+
+            <div class="eyebrow">
+                La maison
+            </div>
+
+            <h2>
+                Des espaces pensés pour toute la famille.
+            </h2>
+
+            <p class="lead">
+                Une organisation agréable sur trois niveaux,
+                avec de beaux volumes et de nombreux espaces pratiques.
+            </p>
+
+        </div>
+
+
+        <div class="rooms">
+
+            <!-- REZ-DE-CHAUSSEE -->
+
+            <div class="room-card">
+
+                <div class="room-number">
+                    Rez-de-chaussée
+                </div>
+
+                <h3>
+                    Vie quotidienne
+                </h3>
+
+                <ul>
+                    <li>Hall d'entrée</li>
+                    <li>WC séparé</li>
+                    <li>Séjour avec vue sur le jardin</li>
+                    <li>Cuisine ouverte équipée</li>
+                    <li>Buanderie</li>
+                    <li>Garage 1 voiture</li>
+                    <li>Terrasse & jardin</li>
+                </ul>
+
+            </div>
+
+
+            <!-- PREMIER ETAGE -->
+
+            <div class="room-card">
+
+                <div class="room-number">
+                    1er étage
+                </div>
+
+                <h3>
+                    Espace nuit
+                </h3>
+
+                <ul>
+                    <li>4 grandes chambres</li>
+                    <li>1 salle de bain</li>
+                    <li>Espaces généreux</li>
+                    <li>Ambiance calme</li>
+                </ul>
+
+            </div>
+
+
+            <!-- DEUXIEME ETAGE -->
+
+            <div class="room-card">
+
+                <div class="room-number">
+                    2e étage
+                </div>
+
+                <h3>
+                    Grenier
+                </h3>
+
+                <ul>
+                    <li>Grand grenier semi-aménagé</li>
+                    <li>Espace de rangement</li>
+                    <li>Possibilité de bureau</li>
+                    <li>Idéal comme salle de jeux</li>
+                    <li>Espace à aménager selon vos besoins</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     POINTS FORTS
+========================= -->
+
+<section class="features">
+
+    <div class="wrap">
+
+        <div class="section-head">
+
+            <div class="eyebrow">
+                Les + de la maison
+            </div>
+
+            <h2>
+                Le confort au quotidien.
+            </h2>
+
+        </div>
+
+
+        <div class="feature-grid">
+
+            <div class="feature">
+
+                <div class="feature-icon">☀️</div>
+
+                <strong>
+                    Panneaux photovoltaïques
+                </strong>
+
+                <span>
+                    Une installation pensée pour améliorer
+                    l'efficacité énergétique de la maison.
+                </span>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="feature-icon">🔥</div>
+
+                <strong>
+                    Nouvelle chaudière
+                </strong>
+
+                <span>
+                    Nouvelle chaudière à condensation au gaz.
+                </span>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="feature-icon">🌿</div>
+
+                <strong>
+                    Jardin & terrasse
+                </strong>
+
+                <span>
+                    Un agréable espace extérieur pour profiter
+                    des beaux jours.
+                </span>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="feature-icon">🚗</div>
+
+                <strong>
+                    Garage
+                </strong>
+
+                <span>
+                    Un garage permettant de stationner
+                    une voiture à l'abri.
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     GALERIE
+========================= -->
+
+<section class="gallery-section" id="photos">
+
+    <div class="wrap">
+
+        <div class="section-head">
+
+            <div class="eyebrow">
+                Galerie
+            </div>
+
+            <h2>
+                Quelques vues de la maison.
+            </h2>
+
+            <p class="lead">
+                Découvrez les espaces de vie et l'atmosphère
+                chaleureuse de cette habitation.
+            </p>
+
+        </div>
+
+
+        <div class="gallery">
+
+            <div class="gallery-main">
+
+                <img
+                    src="images/salon-salle-a-manger.jpg"
+                    alt="Salon et salle à manger"
+                >
+
+            </div>
+
+
+            <div class="gallery-side">
+
+                <img
+                    src="images/cuisine.jpg"
+                    alt="Cuisine ouverte équipée"
+                >
+
+                <img
+                    src="images/Salon et salle à manger.jpg"
+                    alt="Espace salon et salle à manger"
+                >
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     ENVIRONNEMENT
+========================= -->
+
+<section class="environment">
+
+    <div class="wrap environment-grid">
+
+        <div>
+
+            <div class="eyebrow">
+                Emplacement
+            </div>
+
+            <h2>
+                Au calme, sans être isolé.
+            </h2>
+
+            <p class="lead">
+                La maison profite d'un environnement résidentiel
+                agréable tout en permettant de rejoindre facilement
+                les commodités et les principaux axes.
+            </p>
+
+        </div>
+
+
+        <div class="environment-list">
+
+            <div class="environment-item">
+                <strong>🏫 Écoles</strong>
+                À proximité pour faciliter le quotidien familial.
+            </div>
+
+            <div class="environment-item">
+                <strong>🛍️ Commerces</strong>
+                Les commerces et services sont facilement accessibles.
+            </div>
+
+            <div class="environment-item">
+                <strong>⚽ Clubs sportifs</strong>
+                Une offre de loisirs et d'activités à proximité.
+            </div>
+
+            <div class="environment-item">
+                <strong>🛣️ Axes routiers</strong>
+                Accès pratique aux principaux axes de circulation.
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     CONTACT
+========================= -->
+
+<section class="contact" id="contact">
+
+    <div class="wrap contact-grid">
+
+        <div>
+
+            <div class="eyebrow">
+                Location
+            </div>
+
+            <h2>
+                Et si cette maison devenait la vôtre ?
+            </h2>
+
+            <p>
+                Une maison familiale qui combine espace, confort,
+                tranquillité et praticité.
+            </p>
+
+            <p>
+                Vous souhaitez obtenir davantage d'informations
+                ou organiser une visite ?
+            </p>
+
+        </div>
+
+
+        <div class="contact-box">
+
+            <strong>
+                Intéressé(e) ?
+            </strong>
+
+            <p>
+                Contactez-nous pour recevoir les informations
+                complémentaires et convenir d'une visite.
+            </p>
+
+            <!-- REMPLACER LE LIEN PAR VOTRE EMAIL -->
+            <a
+                href="mailto:mf6303@hotmail.com"
+                class="btn"
+            >
+                ✉️ Nous contacter
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
 
 <footer>
-  <div class="wrap">
-    <strong>Rue du Château de Micheroux 94 · 4630 Soumagne</strong><br>
-    Page de présentation — textes et informations à compléter selon l'usage souhaité.
-  </div>
+
+    <div class="wrap">
+
+        Maison 4 chambres à louer · Clos résidentiel
+
+    </div>
+
 </footer>
+
 </body>
 </html>
