@@ -25,7 +25,7 @@ h1{font-family:Georgia,serif;font-size:clamp(3rem,6vw,6.6rem);line-height:.92;fo
 .btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 19px;border-radius:999px;text-decoration:none;font-weight:800;border:1px solid var(--ink)}
 .btn.primary{background:var(--ink);color:white}
 .btn.light{background:transparent}
-.hero-photo{min-height:78vh;background:url("salon-salle-a-manger.jpg") center/cover no-repeat;position:relative}
+.hero-photo{min-height:78vh;background:url("images/salon-salle-a-manger.jpg") center/cover no-repeat;position:relative}
 .hero-photo:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.06),rgba(0,0,0,.22))}
 section{padding:clamp(60px,8vw,110px) 6vw}
 .wrap{max-width:1180px;margin:auto}
