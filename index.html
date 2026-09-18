@@ -765,6 +765,26 @@
 
         }
 
+        .gallery-full {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .gallery-item {
+            height: 300px;
+            overflow: hidden;
+        }
+
+        .gallery-item.gallery-large {
+            grid-column: span 2;
+            height: 420px;
+        }
+
+        .gallery-full .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
 
         .gallery-side img {
 
@@ -1292,7 +1312,7 @@
 
             
             <span>
-                 ⚡ PEB
+                 ⚡ PEB B
             </span>
 
             
@@ -1652,119 +1672,35 @@
 
         <div class="feature-grid">
 
-
             <div class="feature">
-
-
-                <div class="feature-icon">
-                    ☀️
-                </div>
-
-
-                <strong>
-                    Panneaux photovoltaïques
-                </strong>
-
-
-                <span>
-
-                    Une installation qui contribue
-                    à améliorer l'efficacité énergétique
-                    de la maison.
-
-                </span>
-
-
+                <div class="feature-icon">☀️</div>
+                <strong>Panneaux photovoltaïques</strong>
+                <span>Une installation photovoltaïque qui contribue à améliorer l’efficacité énergétique de la maison.</span>
             </div>
 
-
-
             <div class="feature">
-
-
-                <div class="feature-icon">
-                    🔥
-                </div>
-
-
-                <strong>
-                    Nouvelle chaudière à venir
-                </strong>
-
-
-                <span>
-
-                    Une nouvelle chaudière
-                    à condensation au gaz va bientôt être installée 
-
-                </span>
-
-
+                <div class="feature-icon">🔥</div>
+                <strong>Chaudière gaz à condensation</strong>
+                <span>Une nouvelle chaudière à condensation au gaz pour un chauffage plus moderne et confortable.</span>
             </div>
 
-
-
             <div class="feature">
-
-
-                <div class="feature-icon">
-                    🌿
-                </div>
-
-
-                <strong>
-                    Jardin & terrasse
-                </strong>
-
-
-                <span>
-
-                    Un agréable espace extérieur
-                    pour profiter des beaux jours.
-
-                </span>
-
-
+                <div class="feature-icon">🌿</div>
+                <strong>Jardin & terrasse</strong>
+                <span>Un agréable espace extérieur pour profiter des beaux jours en famille.</span>
             </div>
 
-
-
             <div class="feature">
-
-
-                <div class="feature-icon">
-                    🚗
-                </div>
-
-
-                <strong>
-                    Garage
-                </strong>
-
-
-                <span>
-
-                    Un garage permettant
-                    de stationner une voiture à l'abri.
-
-                </span>
-
-            <div class="feature">
-    
-                <div class="feature-icon">
-                    ⚡
-                </div>
-    
-                <strong>
-                    PEB B
-                </hstrong>
-                    
-                <span>
-                    Une bonne performance énergétique pour plus de confort au quotidien.</p>
-                </span>
-            </div>
+                <div class="feature-icon">🚗</div>
+                <strong>Garage</strong>
+                <span>Un garage permettant de stationner une voiture à l’abri.</span>
             </div>
 
+            <div class="feature">
+                <div class="feature-icon">⚡</div>
+                <strong>PEB B</strong>
+                <span>Une bonne performance énergétique pour plus de confort au quotidien.</span>
+            </div>
 
         </div>
 
@@ -1804,9 +1740,8 @@
 
             <p class="lead">
 
-                Quelques premières vues des espaces
-                de vie. D'autres photos pourront être
-                ajoutées prochainement.
+                Découvrez les différents espaces de la maison :
+                pièces de vie, chambres, grenier, terrasse et jardin.
 
             </p>
 
@@ -1815,51 +1750,55 @@
 
 
 
-        <div class="gallery">
+        <div class="gallery gallery-full">
 
-
-            <div class="gallery-main">
-
-
-                <img
-                    src="images/salon-salle-a-manger.jpg"
-                    alt="Salon et salle à manger"
-                >
-
-
+            <div class="gallery-item gallery-large">
+                <img src="images/salon-salle-a-manger.jpg" alt="Salon et salle à manger">
             </div>
 
-
-
-            <div class="gallery-side">
-
-
-                <div>
-
-
-                    <img
-                        src="images/cuisine.jpg"
-                        alt="Cuisine ouverte équipée"
-                    >
-
-
-                </div>
-
-
-                <div>
-
-
-                    <img
-                        src="images/Salon et salle à manger.jpg"
-                        alt="Pièce de la maison"
-                    >
-
-
-                </div>
-
-
+            <div class="gallery-item">
+                <img src="images/cuisine.jpg" alt="Cuisine ouverte équipée">
             </div>
 
+            <div class="gallery-item">
+                <img src="images/salle-a-manger.jpg" alt="Salle à manger">
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/chambre-1.jpg" alt="Chambre 1">
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/chambre-2.jpg" alt="Chambre 2">
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/chambre-3.jpg" alt="Chambre 3">
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/chambre-4.jpg" alt="Chambre 4">
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/grenier-1.jpg" alt="Grenier semi-aménagé">
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/grenier-2.jpg" alt="Grenier - autre vue">
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/jardin-1.jpg" alt="Jardin et arrière de la maison">
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/jardin-2.jpg" alt="Jardin - autre vue">
+            </div>
+
+            <div class="gallery-item">
+                <img src="images/terrasse.jpg" alt="Terrasse et jardin">
+            </div>
 
         </div>
 
